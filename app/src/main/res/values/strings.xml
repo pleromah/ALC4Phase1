@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ALC 4 Phase 1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_about_alc">About ALC</string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="name">Olaide Olulana</string>
+    <string name="track">Android</string>
+    <string name="country">Nigeria</string>
+    <string name="email">olaideolulana@gmail.com</string>
+    <string name="phone">08090459038</string>
+    <string name="text_name">Slack Username:</string>
+    <string name="text_track">Track:</string>
+    <string name="text_country">Country:</string>
+    <string name="text_email">Email:</string>
+    <string name="text_phone">Phone:</string>
+    <string name="slack">Olaide Olulana</string>
+    <string name="welcome">Welcome to ALC 4.0</string>
+    <string name="button_alc">About ALC</string>
+    <string name="button_profile">My Profile</string>
+
+</resources>

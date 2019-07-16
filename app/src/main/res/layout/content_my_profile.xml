@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/title_activity_my_profile"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MyProfile"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_my_profile">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="@string/name"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/photo1"
+        app:layout_constraintStart_toStartOf="@+id/photo1"
+        app:layout_constraintTop_toBottomOf="@+id/photo1" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/phone"
+        android:textColor="#0E0D0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.00"
+        app:layout_constraintStart_toEndOf="@+id/text_phone" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/email"
+        android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="@+id/country"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_email" />
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/track"
+        android:textColor="#0C0B0B"
+        app:layout_constraintBottom_toTopOf="@+id/country"
+        app:layout_constraintEnd_toEndOf="@id/country"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_track" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/country"
+        android:textColor="#090808"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/track"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_country" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:text="@string/text_name"
+        android:textColor="#040303"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_track"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_track"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:text="@string/text_track"
+        android:textColor="#0E0C0C"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_country"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_country"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:text="@string/text_country"
+        android:textColor="#0C0B0B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_email"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:text="@string/text_email"
+        android:textColor="#151313"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_phone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:text="@string/text_phone"
+        android:textColor="#1A1717"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/photo1"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/title_activity_my_profile"
+        android:src="@drawable/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slack"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/slack"
+        android:textColor="#100F0F"
+        app:layout_constraintBottom_toTopOf="@+id/track"
+        app:layout_constraintStart_toEndOf="@+id/text_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
